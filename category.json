@@ -1,11 +1,11 @@
 [
     {
       "id": "01",
-      "name": "Web Devlopment"
+      "name": "Home"
     },
     {
       "id": "02",
-      "name": "Digital Marketing"
+      "name": "Web Devlopment"
     },
     {
       "id": "03",
@@ -29,6 +29,6 @@
     },
     {
       "id": "08",
-      "name": "All News"
+      "name": "All Courses"
     }
   ]

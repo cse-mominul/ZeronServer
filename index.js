@@ -8,6 +8,24 @@ const categories = require('./category.json')
 app.get('/categories',(req,res)=>{
     res.send(categories)
 })
+app.get('/course',(req, res)=>{
+    res.send(course)
+})
+
+app.get('/category/:id',(req,res)=>{
+    
+    const id = req.params.id;
+    if (id == 08){
+        res.send(course)
+    }
+    else
+    {
+    const SelectedCategory = course.filter(n => n.category_id === id);
+    res.send(SelectedCategory);
+
+    }
+    
+})
 app.get('/course/:id',(req,res)=>{
     const id = req.params._id;
     const selectedCourse = course.find(n => n.id === id);
